@@ -38,7 +38,8 @@ const reducer = (state = initialState, action) => {
       return {
         ...state,
         fetching: true,
-        error: null
+        error: null,
+        smurfs: []
       }
     case actions.GET_SMURFS_SUCCESS:
       return {
